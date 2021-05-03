@@ -384,6 +384,7 @@
         <!-- /.Third container -->
 
         <!-- Contact form -->
+        <form>
         <div id="contact" class="container">
 
             <!--Section: Contact v.2-->
@@ -396,7 +397,7 @@
 
                     <!--First column-->
                     <div class="col-md-8 mb-r">
-                        <form>
+                        <form action="mail.php" method="POST">
                             <!--First row-->
                             <div class="row">
 
@@ -404,7 +405,7 @@
                                 <div class="col-md-6">
                                     <div class="md-form">
                                         <div class="md-form">
-                                            <input type="text" id="form41" class="form-control">
+                                            <input type="text" id="form41" class="form-control" name="name">
                                             <label for="form41" class="">Your name</label>
                                         </div>
                                     </div>
@@ -413,7 +414,7 @@
                                 <div class="col-md-6">
                                     <div class="md-form">
                                         <div class="md-form">
-                                            <input type="text" id="form52" class="form-control">
+                                            <input type="text" id="form52" class="form-control" name="email">
                                             <label for="form52" class="">Your email</label>
                                         </div>
                                     </div>
@@ -422,14 +423,14 @@
                             <!--/.First row-->
 
                             <!--Second row-->
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col-md-12">
                                     <div class="md-form">
                                         <input type="text" id="form51" class="form-control">
                                         <label for="form51" class="">Subject</label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--/Second row-->
 
                             <!--Third row-->
@@ -437,7 +438,7 @@
                                 <!--First column-->
                                 <div class="col-md-12">
                                     <div class="md-form">
-                                        <textarea type="text" id="form76" class="md-textarea"></textarea>
+                                        <textarea type="text" id="form76" class="md-textarea" name="message"></textarea>
                                         <label for="form76">Your message</label>
                                     </div>
                                 </div>
@@ -464,7 +465,7 @@
                     </div>
                     <!--.Second column-->
                 </div>
-
+                </form>
             </section>
             <!--/Section: Contact v.2-->
 
